@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reserva - Pizzaria La Dorée</title>
+  <link rel="stylesheet" href="reserva.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Pizzaria <span>La Dorée Ceep</span></h1>
+      <nav>
+        <ul>
+             <li><a href="index.html">Início</a></li>
+          <li><a href="inicio.html#sobre">Sobre</a></li>
+          <li><a href="inicio.html#cardapio">Cardápio</a></li>
+          <li><a href="inicio.html#contato">Contato</a></li>
+          <li><a href="reserva.html" class="btn-reserva">Reserva</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="reservas container">
+    <h2>Faça sua Reserva</h2>
+    <form id="formReserva">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email@exemplo.com" required />
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+
+      <label for="data">Data da Reserva</label>
+      <input type="date" id="data" name="data" required />
+
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" required />
+
+      <label for="pessoas">Número de Pessoas</label>
+      <input type="number" id="pessoas" name="pessoas" min="1" max="20" required />
+
+      <button type="submit" class="btn-reserva">Reservar Agora</button>
+    </form>
+    <p id="msgReserva" class="msg-reserva"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Pizzaria La Dorée Feito por Augusto Portella e Davi Miguel 2J</p>
+  </footer>
+
+  <script src="reserva.js"></script>
+</body>
+</html>

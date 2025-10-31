@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  header {
+    background: #1c1c1c;
+    border-bottom: 2px solid #bfa454;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #bfa454;
+  }
+  
+  .logo span {
+    color: #e8c547;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #e8c547;
+  }
+  
+  .btn-reserva {
+    background: #bfa454;
+    color: #121212;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .btn-reserva:hover {
+    background: #e8c547;
+    color: #121212;
+  }
+  
+  .contato {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .contato h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #bfa454;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contato p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #d6cfa3;
+  }
+  
+  
+  footer {
+    background: #1c1c1c;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #bfa454;
+    font-size: 0.9rem;
+    color: #8b7c2d;
+    font-style: italic;
+  }
+  
+  
+  @media(max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
